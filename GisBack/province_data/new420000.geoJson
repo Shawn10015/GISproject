@@ -7348,7 +7348,8 @@
                 "acroutes": [
                     100000,
                     420000
-                ]
+                ],
+                "population": 5500000
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -20887,7 +20888,8 @@
                 "acroutes": [
                     100000,
                     420000
-                ]
+                ],
+                "population": 819256
             },
             "geometry": {
                 "type": "MultiPolygon",

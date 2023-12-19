@@ -392,7 +392,8 @@
                 "acroutes": [
                     100000,
                     460000
-                ]
+                ],
+                "population": 1000
             },
             "geometry": {
                 "type": "MultiPolygon",

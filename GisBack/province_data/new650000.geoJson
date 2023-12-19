@@ -20096,7 +20096,8 @@
                 "acroutes": [
                     100000,
                     650000
-                ]
+                ],
+                "population": 106200
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -20283,7 +20284,8 @@
                 "acroutes": [
                     100000,
                     650000
-                ]
+                ],
+                "population": 261000
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -20422,7 +20424,8 @@
                 "acroutes": [
                     100000,
                     650000
-                ]
+                ],
+                "population": 70000
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -20729,7 +20732,8 @@
                 "acroutes": [
                     100000,
                     650000
-                ]
+                ],
+                "population": 94000
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -21040,7 +21044,8 @@
                 "acroutes": [
                     100000,
                     650000
-                ]
+                ],
+                "population": 70600
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -21283,7 +21288,8 @@
                 "acroutes": [
                     100000,
                     650000
-                ]
+                ],
+                "population": 261000
             },
             "geometry": {
                 "type": "MultiPolygon",
