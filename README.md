@@ -22,8 +22,7 @@ docker-compose down
 
 localhost:5000/apidocs
 
-#Port
-
-## Gisapp 8080
-## Gisback 5000
-## Gisdata 80, localhost
+# Port
+Gisapp 8080
+Gisback 5000
+Gisdata 80, localhost
