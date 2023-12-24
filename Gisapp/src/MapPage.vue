@@ -4,9 +4,11 @@
         <div class="info-panel">
             <div class="basic-info">
                 <h2>基本信息</h2>
+                <div v-if="in_circle_cities.length > 0">
                 <button v-for="(info, index) in in_circle_cities" :key="index" class="city-button" @click="showDetails(info)">
                     Name: {{ info.name }} Poupulation: {{ info.population }}
                 </button>
+                </div>
             </div>
             <div class="detailed-info">
                 <h2>详细信息</h2>
@@ -65,6 +67,18 @@ export default {
             return distance;
         }
 
+        async function get_province_data(city) {
+            try {
+                const province_response = await axios.get(`http://localhost:5000/province/province/${city.adcode}`)
+                console.log(province_response);
+                city.province = province_response.data.province;
+                console.log(city);
+                return city;
+            } catch (error) {
+                console.error(`Error adcode ${city.adcode}`)
+            }
+        }
+
         async function get_response_data() {
                 try {
                     const city_response = await axios.get('http://localhost:5000/city/cities');
@@ -78,16 +92,25 @@ export default {
                         geom: city.geom,
                         population: city.population
                     }));
+
                     in_circle_cities.value = center_cities.value.filter(city => {
                         const distance = haversine(currentClick.longtitude, currentClick.latitude, city.center_longtitude, city.center_latitude);
                         return distance <= choose_radius;
                     });
+
+                    const add_province = in_circle_cities.value.map(city =>
+                        get_province_data(city)
+                    );
+
+                    in_circle_cities.value = await Promise.all(add_province);
+
                     console.log(in_circle_cities)
 
                 } catch (error) {
                     console.error(error)
                 }
             }
+
 
         onMounted(() => {
             map.value = L.map("map").setView([33.3603, 108.5457], 6);
