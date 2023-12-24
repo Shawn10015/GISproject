@@ -1,0 +1,4505 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "颐和园",
+        "省": "北京",
+        "城市": "北京市",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.278749,
+          40.00486904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "十三陵",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.231846,
+          40.26354398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "慕田峪长城",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5716113,
+          40.43744204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "八达岭长城风景名胜区",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.024067,
+          40.36263905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天坛公园",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.417246,
+          39.88824296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "故宫博物院",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4034139,
+          39.92409137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "恭王府",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3925993,
+          39.94338117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "北京市奥林匹克公园",
+        "省": "北京",
+        "城市": "北京",
+        "adcode": 110000.0,
+        "adcode_province": 110000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.399206,
+          39.999245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天津盘山风景名胜区",
+        "省": "天津",
+        "城市": "天津",
+        "adcode": 120000.0,
+        "adcode_province": 120000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.288913,
+          40.102982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天津古文化街旅游区（津门故里）",
+        "省": "天津",
+        "城市": "天津",
+        "adcode": 120000.0,
+        "adcode_province": 120000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.199184,
+          39.149532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "西柏坡纪念馆",
+        "省": "河北",
+        "城市": "石家庄市",
+        "adcode": 130100.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.95144,
+          38.345586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "承德避暑山庄及周围寺庙景区",
+        "省": "河北",
+        "城市": "承德市",
+        "adcode": 130800.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.9459614,
+          40.98747009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "山海关景区",
+        "省": "河北",
+        "城市": "秦皇岛市",
+        "adcode": 130300.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.805383,
+          39.97626309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "清东陵",
+        "省": "河北",
+        "城市": "唐山市",
+        "adcode": 130200.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.6906264,
+          40.18098388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "野三坡景区",
+        "省": "河北",
+        "城市": "涞水县",
+        "adcode": 130600.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.396635,
+          39.66547209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "白石山景区",
+        "省": "河北",
+        "城市": "涞水县",
+        "adcode": 130600.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.7091952,
+          39.22293065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "娲皇宫",
+        "省": "河北",
+        "城市": "涉县",
+        "adcode": 130400.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.6243075,
+          36.64728985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "广府古城旅游景区",
+        "省": "河北",
+        "城市": "邯郸市",
+        "adcode": 130400.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.7367272,
+          36.70734702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "安新白洋淀景区",
+        "省": "河北",
+        "城市": "安新县",
+        "adcode": 130600.0,
+        "adcode_province": 130000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.996445,
+          38.94219411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "云冈石窟",
+        "省": "山西",
+        "城市": "大同市",
+        "adcode": 140200.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.144291,
+          40.11927324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "五台山",
+        "省": "山西",
+        "城市": "忻州市",
+        "adcode": 140900.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5957081,
+          38.97619789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "皇城相府",
+        "省": "山西",
+        "城市": "晋城市",
+        "adcode": 140500.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.5894617,
+          35.5199388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "绵山",
+        "省": "山西",
+        "城市": "晋中市",
+        "adcode": 140700.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.999227,
+          36.89531691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "平遥古城",
+        "省": "山西",
+        "城市": "晋中市",
+        "adcode": 140700.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.1902203,
+          37.20953514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "代县雁门关",
+        "省": "山西",
+        "城市": "忻州市",
+        "adcode": 140900.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.889451,
+          39.18997477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "大槐树寻根祭祖园景区",
+        "省": "山西",
+        "城市": "临汾市",
+        "adcode": 141000.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.6823551,
+          36.27708661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "壶关太行山八泉峡景区",
+        "省": "山西",
+        "城市": "长治市",
+        "adcode": 140400.0,
+        "adcode_province": 140000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5737992,
+          35.9512019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "本溪市本溪水洞景区",
+        "省": "辽宁",
+        "城市": "本溪市",
+        "adcode": 210500.0,
+        "adcode_province": 210000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.0883321,
+          41.30745385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "金石滩风景名胜区",
+        "省": "辽宁",
+        "城市": "大连市",
+        "adcode": 210200.0,
+        "adcode_province": 210000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.00072,
+          39.10158813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "沈阳世博园",
+        "省": "辽宁",
+        "城市": "沈阳市",
+        "adcode": 210100.0,
+        "adcode_province": 210000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.64599,
+          41.86342387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "红海滩风景区",
+        "省": "辽宁",
+        "城市": "盘锦市",
+        "adcode": 211100.0,
+        "adcode_province": 210000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.851983,
+          40.90783996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "伪满皇宫博物院",
+        "省": "吉林",
+        "城市": "长春",
+        "adcode": 220100.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.3552811,
+          43.91145956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "净月潭国家森林公园",
+        "省": "吉林",
+        "城市": "长春",
+        "adcode": 220100.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.4828699,
+          43.78510774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "长影世纪城",
+        "省": "吉林",
+        "城市": "长春",
+        "adcode": 220100.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.452836,
+          43.77824145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "长春世界雕塑公园",
+        "省": "吉林",
+        "城市": "长春",
+        "adcode": 220100.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.340278,
+          43.82826213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "六鼎山文化旅游区",
+        "省": "吉林",
+        "城市": "延边",
+        "adcode": 222400.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.251207,
+          43.32978206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "长白山景区",
+        "省": "吉林",
+        "城市": "安图县",
+        "adcode": 222400.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.083986,
+          42.0668979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "集安高句丽文物古迹景区",
+        "省": "吉林",
+        "城市": "通化",
+        "adcode": 220500.0,
+        "adcode_province": 220000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.1686051,
+          41.17350689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "东方明珠广播电视塔",
+        "省": "上海",
+        "城市": "上海",
+        "adcode": 310000.0,
+        "adcode_province": 310000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5063787,
+          31.24541375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "上海野生动物园",
+        "省": "上海",
+        "城市": "上海",
+        "adcode": 310000.0,
+        "adcode_province": 310000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7279952,
+          31.06137957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "上海科技馆",
+        "省": "上海",
+        "城市": "上海",
+        "adcode": 310000.0,
+        "adcode_province": 310000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5478229,
+          31.22435611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省南京市钟山风景名胜区-中山陵园风景区",
+        "省": "江苏",
+        "城市": "南京市",
+        "adcode": 320100.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.861453,
+          32.05973904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省南京市夫子庙—秦淮风光带景区",
+        "省": "江苏",
+        "城市": "南京市",
+        "adcode": 320100.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.7959562,
+          32.02619588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "中央电视台无锡影视基地三国水浒景区",
+        "省": "江苏",
+        "城市": "无锡市",
+        "adcode": 320200.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.24079,
+          31.48722133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省无锡市灵山景区",
+        "省": "江苏",
+        "城市": "无锡市",
+        "adcode": 320200.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1028944,
+          31.43639954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省无锡市鼋头渚风景区",
+        "省": "江苏",
+        "城市": "无锡市",
+        "adcode": 320200.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.233413,
+          31.52977395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省徐州云龙湖风景区",
+        "省": "江苏",
+        "城市": "徐州市",
+        "adcode": 320300.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1595727,
+          34.24433845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省常州市环球恐龙城休闲旅游区",
+        "省": "江苏",
+        "城市": "常州市",
+        "adcode": 320400.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0060601,
+          31.82814557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省常州市天目湖景区",
+        "省": "江苏",
+        "城市": "常州市",
+        "adcode": 320400.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4522109,
+          31.32434591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省常州市中国春秋淹城旅游区",
+        "省": "江苏",
+        "城市": "常州市",
+        "adcode": 320400.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.930306,
+          31.70814696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省苏州园林景区",
+        "省": "江苏",
+        "城市": "苏州市",
+        "adcode": 320500.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6355118,
+          31.33020918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省苏州市周庄古镇景区",
+        "省": "江苏",
+        "城市": "苏州市",
+        "adcode": 320500.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8582675,
+          31.11992638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省苏州市同里古镇景区",
+        "省": "江苏",
+        "城市": "苏州市",
+        "adcode": 320500.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7301086,
+          31.16091373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省苏州市金鸡湖景区",
+        "省": "江苏",
+        "城市": "苏州市",
+        "adcode": 320500.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7077956,
+          31.31042996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省苏州市吴中太湖旅游区",
+        "省": "江苏",
+        "城市": "苏州市",
+        "adcode": 320500.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4510119,
+          31.22479886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省苏州市沙家浜·虞山尚湖旅游区",
+        "省": "江苏",
+        "城市": "苏州市",
+        "adcode": 320500.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.693665,
+          31.65217697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省南通市濠河景区",
+        "省": "江苏",
+        "城市": "南通市",
+        "adcode": 320600.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8734777,
+          32.02037008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省连云港市花果山景区",
+        "省": "江苏",
+        "城市": "连云港市",
+        "adcode": 320700.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2809829,
+          34.64722556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省淮安市周恩来故里旅游景区",
+        "省": "江苏",
+        "城市": "淮安市",
+        "adcode": 320800.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.156562,
+          33.5222121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省盐城市大丰中华麋鹿园景区",
+        "省": "江苏",
+        "城市": "盐城市",
+        "adcode": 320900.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8218749,
+          32.98999864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省扬州市瘦西湖风景区",
+        "省": "江苏",
+        "城市": "扬州市",
+        "adcode": 321000.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4280921,
+          32.4147799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省镇江市金山·焦山·北固山旅游景区",
+        "省": "江苏",
+        "城市": "镇江市",
+        "adcode": 321100.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.422035,
+          32.21993105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省镇江市句容茅山景区",
+        "省": "江苏",
+        "城市": "镇江市",
+        "adcode": 321100.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.321956,
+          31.79149795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江苏省姜堰溱湖旅游景区",
+        "省": "江苏",
+        "城市": "泰州市",
+        "adcode": 321200.0,
+        "adcode_province": 320000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.103639,
+          32.65622108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "西溪湿地景区",
+        "省": "浙江",
+        "城市": "杭州市",
+        "adcode": 330100.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0715283,
+          30.27289035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "普陀山风景旅游区",
+        "省": "浙江",
+        "城市": "舟山市",
+        "adcode": 330900.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.3976078,
+          30.00797589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "绍兴鲁迅故里·沈园景区",
+        "省": "浙江",
+        "城市": "绍兴市",
+        "adcode": 330600.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5910617,
+          29.99899868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "神仙居景区",
+        "省": "浙江",
+        "城市": "台州市",
+        "adcode": 331000.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6095499,
+          28.69458185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "溪口—滕头景区",
+        "省": "浙江",
+        "城市": "宁波市",
+        "adcode": 330200.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3941351,
+          29.70744683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江郎山-廿八都旅游区",
+        "省": "浙江",
+        "城市": "衢州市",
+        "adcode": 330800.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.4897537,
+          28.29801031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "南湖旅游区",
+        "省": "浙江",
+        "城市": "嘉兴市",
+        "adcode": 330400.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7650801,
+          30.75746948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "乐清市雁荡山景区",
+        "省": "浙江",
+        "城市": "温州市",
+        "adcode": 330300.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0402965,
+          28.37966539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天一阁·月湖景区",
+        "省": "浙江",
+        "城市": "宁波市",
+        "adcode": 330200.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5449746,
+          29.8772222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "杭州西湖景区",
+        "省": "浙江",
+        "城市": "杭州市",
+        "adcode": 330100.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.12792,
+          30.22893211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "横店影视城",
+        "省": "浙江",
+        "城市": "金华市",
+        "adcode": 330700.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3233757,
+          29.14363319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "根宫佛国文化旅游区",
+        "省": "浙江",
+        "城市": "衢州市",
+        "adcode": 330800.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.3995209,
+          29.13938199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "西塘古镇景区",
+        "省": "浙江",
+        "城市": "嘉兴市",
+        "adcode": 330400.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8989969,
+          30.95046618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "桐乡市乌镇景区",
+        "省": "浙江",
+        "城市": "嘉兴市",
+        "adcode": 330400.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.498263,
+          30.75420185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天台山景区",
+        "省": "浙江",
+        "城市": "台州市",
+        "adcode": 331000.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.04204,
+          29.16274702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "南浔古镇景区",
+        "省": "浙江",
+        "城市": "湖州市",
+        "adcode": 330500.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.436766,
+          30.88146888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "千岛湖景区",
+        "省": "浙江",
+        "城市": "杭州市",
+        "adcode": 330100.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.0601045,
+          29.55298659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "缙云仙都景区",
+        "省": "浙江",
+        "城市": "丽水市",
+        "adcode": 331100.0,
+        "adcode_province": 330000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.147137,
+          28.69622699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "肥西三河古镇",
+        "省": "安徽",
+        "城市": "合肥市",
+        "adcode": 340100.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.2513062,
+          31.51792746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "八里河旅游区",
+        "省": "安徽",
+        "城市": "阜阳市",
+        "adcode": 341200.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3143438,
+          32.5677373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天堂寨景区",
+        "省": "安徽",
+        "城市": "六安市",
+        "adcode": 341500.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.785284,
+          31.14112486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "万佛湖景区",
+        "省": "安徽",
+        "城市": "六安市",
+        "adcode": 341500.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.7835086,
+          31.31060281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "方特旅游区",
+        "省": "安徽",
+        "城市": "芜湖市",
+        "adcode": 340200.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.382539,
+          31.38341042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天柱山景区",
+        "省": "安徽",
+        "城市": "安庆市",
+        "adcode": 340800.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.466712,
+          30.74191382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "绩溪龙川景区",
+        "省": "安徽",
+        "城市": "宣城市",
+        "adcode": 341800.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.676602,
+          30.08301223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "九华山景区",
+        "省": "安徽",
+        "城市": "池州市",
+        "adcode": 341700.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.8305114,
+          30.48489415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "黄山景区",
+        "省": "安徽",
+        "城市": "黄山市",
+        "adcode": 341000.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.1680894,
+          30.13039001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "皖南古村落",
+        "省": "安徽",
+        "城市": "黄山市",
+        "adcode": 341000.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.2926308,
+          29.84679422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "古徽州文化旅游区",
+        "省": "安徽",
+        "城市": "黄山市",
+        "adcode": 341000.0,
+        "adcode_province": 340000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.442534,
+          29.86913695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "厦门鼓浪屿旅游区",
+        "省": "福建",
+        "城市": "厦门市",
+        "adcode": 350200.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.0734674,
+          24.45096806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "武夷山风景名胜区",
+        "省": "福建",
+        "城市": "武夷山市",
+        "adcode": 350700.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.963042,
+          27.668108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "福建土楼（永定）旅游景区",
+        "省": "福建",
+        "城市": "龙岩市",
+        "adcode": 350800.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.981453,
+          24.65790105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "三明市泰宁风景旅游区",
+        "省": "福建",
+        "城市": "三明市",
+        "adcode": 350400.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1083732,
+          26.86994215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "世界地质公园屏南白水洋·鸳鸯溪旅游区",
+        "省": "福建",
+        "城市": "宁德市",
+        "adcode": 350900.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.0591391,
+          27.07022107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "泉州市清源山景区",
+        "省": "福建",
+        "城市": "泉州市",
+        "adcode": 350500.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.6183225,
+          24.95106436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "宁德市福鼎太姥山风景区",
+        "省": "福建",
+        "城市": "宁德市",
+        "adcode": 350900.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1921578,
+          27.11637669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "福州市三坊七巷历史文化街区景区",
+        "省": "福建",
+        "城市": "福州市",
+        "adcode": 350100.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.303186,
+          26.08845199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "龙岩市古田会议会址景区",
+        "省": "福建",
+        "城市": "龙岩市",
+        "adcode": 350800.0,
+        "adcode_province": 350000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.83268,
+          25.22255944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省九江市庐山风景名胜区",
+        "省": "江西",
+        "城市": "九江市",
+        "adcode": 360400.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0010823,
+          29.56154403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省吉安市井冈山风景旅游区",
+        "省": "江西",
+        "城市": "吉安市",
+        "adcode": 360800.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.143789,
+          26.63616696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省上饶市三清山风景名胜区",
+        "省": "江西",
+        "城市": "上饶市",
+        "adcode": 361100.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.076681,
+          28.91159707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省鹰潭市龙虎山景区",
+        "省": "江西",
+        "城市": "鹰潭市",
+        "adcode": 360600.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.0005516,
+          28.09026478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省上饶市江湾景区",
+        "省": "江西",
+        "城市": "上饶市",
+        "adcode": 361100.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.0580125,
+          29.37419573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省景德镇市古窑民俗博览区",
+        "省": "江西",
+        "城市": "景德镇市",
+        "adcode": 360200.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1915636,
+          29.28926179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省瑞金市“共和国”摇篮旅游区",
+        "省": "江西",
+        "城市": "赣州市",
+        "adcode": 360700.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.0188817,
+          25.88995966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省宜春市明月山旅游区",
+        "省": "江西",
+        "城市": "宜春市",
+        "adcode": 360900.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.299102,
+          27.60542999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省上饶市龟峰景区",
+        "省": "江西",
+        "城市": "上饶市",
+        "adcode": 361100.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.432958,
+          28.32336503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省抚州市资溪大觉山景区",
+        "省": "江西",
+        "城市": "抚州市",
+        "adcode": 361000.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.150124,
+          27.70404096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省南昌市滕王阁旅游区",
+        "省": "江西",
+        "城市": "南昌市",
+        "adcode": 360100.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8876749,
+          28.68737618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "江西省萍乡市武功山景区",
+        "省": "江西",
+        "城市": "萍乡市",
+        "adcode": 360300.0,
+        "adcode_province": 360000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.257121,
+          27.60381601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "天下第一泉",
+        "省": "山东",
+        "城市": "济南市",
+        "adcode": 370100.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.0217946,
+          36.66707307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "崂山风景区",
+        "省": "山东",
+        "城市": "青岛市",
+        "adcode": 370200.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6256512,
+          36.19065957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "台儿庄古城景区",
+        "省": "山东",
+        "城市": "枣庄市",
+        "adcode": 370400.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.749556,
+          34.56381096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "黄河口生态旅游区",
+        "省": "山东",
+        "城市": "东营市",
+        "adcode": 370500.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.170466,
+          37.73822896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "烟台市龙口南山景区",
+        "省": "山东",
+        "城市": "烟台市",
+        "adcode": 370600.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4859528,
+          37.56725337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "烟台市蓬莱阁(三仙山·八仙过海)旅游区",
+        "省": "山东",
+        "城市": "烟台市",
+        "adcode": 370600.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7618275,
+          37.83043682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "青州古城旅游区",
+        "省": "山东",
+        "城市": "潍坊市",
+        "adcode": 370700.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.4880225,
+          36.68518401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "济宁市曲阜明故城（三孔）旅游区",
+        "省": "山东",
+        "城市": "济宁市",
+        "adcode": 370800.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.996161,
+          35.59890388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "泰山景区",
+        "省": "山东",
+        "城市": "泰安市",
+        "adcode": 370900.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.094738,
+          36.2698929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "刘公岛景区",
+        "省": "山东",
+        "城市": "威海市",
+        "adcode": 371000.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.1972612,
+          37.51029434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "华夏城旅游景区",
+        "省": "山东",
+        "城市": "威海市",
+        "adcode": 371000.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.122166,
+          37.429984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "沂蒙山旅游区",
+        "省": "山东",
+        "城市": "临沂市",
+        "adcode": 371300.0,
+        "adcode_province": 370000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.9843958,
+          35.56721733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "嵩山少林景区",
+        "省": "河南",
+        "城市": "郑州市",
+        "adcode": 410100.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.961054,
+          34.52003697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "开封清明上河园",
+        "省": "河南",
+        "城市": "开封市",
+        "adcode": 410200.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.347061,
+          34.81532095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "洛阳市龙门石窟景区",
+        "省": "河南",
+        "城市": "洛阳市",
+        "adcode": 410300.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.484008,
+          34.56464903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "洛阳白云山国家森林公园",
+        "省": "河南",
+        "城市": "洛阳市",
+        "adcode": 410300.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.8498617,
+          33.67563237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "洛阳市老君山-鸡冠山景区",
+        "省": "河南",
+        "城市": "洛阳市",
+        "adcode": 410300.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.6630003,
+          33.75185952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "龙潭大峡谷",
+        "省": "河南",
+        "城市": "洛阳市",
+        "adcode": 410300.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.0005547,
+          34.96659329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "安阳市殷墟景区",
+        "省": "河南",
+        "城市": "安阳市",
+        "adcode": 410500.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.31621,
+          36.14880686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "红旗渠-林州太行风景区",
+        "省": "河南",
+        "城市": "安阳市",
+        "adcode": 410500.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.8216252,
+          36.23626761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "尧山-大佛景区",
+        "省": "河南",
+        "城市": "平顶山市",
+        "adcode": 410400.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.470402,
+          33.76386008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "修武县云台山风景名胜区（神农山-青天河）",
+        "省": "河南",
+        "城市": "焦作市",
+        "adcode": 410800.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.8232529,
+          35.21860538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "老界岭-恐龙遗迹园景区",
+        "省": "河南",
+        "城市": "南阳市",
+        "adcode": 411300.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.7803165,
+          33.65091195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "嵖岈山风景区",
+        "省": "河南",
+        "城市": "驻马店市",
+        "adcode": 411700.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.7365962,
+          33.13565531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "芒砀山汉文化旅游区",
+        "省": "河南",
+        "城市": "商丘市",
+        "adcode": 411400.0,
+        "adcode_province": 410000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.522746,
+          34.17612904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "黄鹤楼公园",
+        "省": "湖北",
+        "城市": "武汉市",
+        "adcode": 420100.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.309043,
+          30.55031694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "武汉东湖风景名胜区",
+        "省": "湖北",
+        "城市": "武汉市",
+        "adcode": 420100.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.420005,
+          30.55786881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "黄陂木兰生态文化旅游区",
+        "省": "湖北",
+        "城市": "武汉市",
+        "adcode": 420100.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.291544,
+          31.18369284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "隆中风景名胜区古隆中景区",
+        "省": "湖北",
+        "城市": "襄阳区",
+        "adcode": 420600.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.0361975,
+          31.99633832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "三峡大坝旅游区",
+        "省": "湖北",
+        "城市": "宜昌市",
+        "adcode": 420500.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.0405703,
+          30.83274485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "三峡人家风景区",
+        "省": "湖北",
+        "城市": "宜昌市",
+        "adcode": 420500.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.162357,
+          30.79655282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "长阳清江画廊旅游度假区",
+        "省": "湖北",
+        "城市": "宜昌市",
+        "adcode": 420500.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.1465135,
+          30.47053272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "十堰武当山风景名胜区",
+        "省": "湖北",
+        "城市": "十堰市",
+        "adcode": 420300.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.0699862,
+          32.46710268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "咸宁市赤壁古战场景区",
+        "省": "湖北",
+        "城市": "咸宁市",
+        "adcode": 421200.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.6370879,
+          29.88514483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "恩施州神农溪纤夫文化旅游区",
+        "省": "湖北",
+        "城市": "恩施市",
+        "adcode": 422800.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3362949,
+          31.04455407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "恩施大峡谷景区",
+        "省": "湖北",
+        "城市": "恩施市",
+        "adcode": 422800.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.173293,
+          30.43177995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "神农架生态旅游区",
+        "省": "湖北",
+        "城市": "神农架",
+        "adcode": 429021.0,
+        "adcode_province": 420000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.4895862,
+          31.40738739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "东江湖风景名胜区",
+        "省": "湖南",
+        "城市": "郴州市",
+        "adcode": 431000.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.317574,
+          25.87195901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "衡阳市南岳区衡山旅游区",
+        "省": "湖南",
+        "城市": "衡阳市",
+        "adcode": 430400.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.722068,
+          27.27566998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "崀山风景名胜区",
+        "省": "湖南",
+        "城市": "邵阳市",
+        "adcode": 430500.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.8021925,
+          26.35997716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "韶山风景名胜区",
+        "省": "湖南",
+        "城市": "湘潭市",
+        "adcode": 430300.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.4967797,
+          27.91050297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "岳阳楼洞庭湖─君山岛风景区",
+        "省": "湖南",
+        "城市": "岳阳市",
+        "adcode": 430600.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.0133722,
+          29.35859994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "张家界武陵源风景名胜区",
+        "省": "湖南",
+        "城市": "张家界市",
+        "adcode": 430800.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.4761448,
+          29.35971148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "张家界市武陵源－天门山旅游区",
+        "省": "湖南",
+        "城市": "张家界市",
+        "adcode": 430800.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.491514,
+          29.05291202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "岳麓山·橘子洲旅游区",
+        "省": "湖南",
+        "城市": "长沙市",
+        "adcode": 430100.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.9677196,
+          28.18856981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "长沙市花明楼景区",
+        "省": "湖南",
+        "城市": "长沙市",
+        "adcode": 430100.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.6505096,
+          28.04419725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "株洲炎帝陵风景名胜区",
+        "省": "湖南",
+        "城市": "株洲市",
+        "adcode": 430200.0,
+        "adcode_province": 430000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.6789067,
+          26.42859869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "广州市长隆旅游度假区",
+        "省": "广州",
+        "城市": "广州市",
+        "adcode": 440100.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.331839,
+          23.00580902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "广州市白云山风景区",
+        "省": "广州",
+        "城市": "广州市",
+        "adcode": 440100.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.3065269,
+          23.19121294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "深圳市华侨城旅游度假区",
+        "省": "深圳",
+        "城市": "深圳市",
+        "adcode": 440300.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.99117,
+          22.54440587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "深圳市观澜湖休闲度假区",
+        "省": "深圳",
+        "城市": "深圳市",
+        "adcode": 440300.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.0850602,
+          22.72865238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "佛山市西樵山景区",
+        "省": "佛山",
+        "城市": "佛山市",
+        "adcode": 440600.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.9831026,
+          22.92922692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "佛山市长鹿旅游休博园",
+        "省": "佛山",
+        "城市": "佛山市",
+        "adcode": 440600.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.2952293,
+          22.88440848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "韶关市丹霞山景区",
+        "省": "韶关",
+        "城市": "韶关市",
+        "adcode": 440200.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.7276583,
+          25.0275593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "梅州市雁南飞茶田景区",
+        "省": "梅州",
+        "城市": "梅州市",
+        "adcode": 441400.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3819661,
+          24.3882319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "惠州市罗浮山景区",
+        "省": "惠州",
+        "城市": "惠州市",
+        "adcode": 441300.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.04283,
+          23.27056604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "惠州市西湖风景名胜区",
+        "省": "惠州",
+        "城市": "惠州市",
+        "adcode": 441300.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.403979,
+          23.095461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "孙中山故里旅游区",
+        "省": "中山",
+        "城市": "中山市",
+        "adcode": 442000.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5346402,
+          22.44866516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "阳江市海陵岛大角湾海上丝路旅游区",
+        "省": "阳江",
+        "城市": "阳江市",
+        "adcode": 441700.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.8484294,
+          21.57492344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "肇庆市星湖风景名胜区",
+        "省": "肇庆",
+        "城市": "肇庆市",
+        "adcode": 441200.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.4762826,
+          23.08165699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "清远市连州地下河旅游景区",
+        "省": "清远",
+        "城市": "清远市",
+        "adcode": 441800.0,
+        "adcode_province": 440000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.3364851,
+          25.00805683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "南宁青秀山风景旅游区",
+        "省": "广西",
+        "城市": "南宁市",
+        "adcode": 450100.0,
+        "adcode_province": 450000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.695092,
+          24.32127999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "桂林漓江景区",
+        "省": "广西",
+        "城市": "桂林市",
+        "adcode": 450300.0,
+        "adcode_province": 450000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.4382622,
+          25.1531659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "桂林乐满地景区",
+        "省": "广西",
+        "城市": "桂林市",
+        "adcode": 450300.0,
+        "adcode_province": 450000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.6821619,
+          25.58987441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "桂林独秀峰•王城景区",
+        "省": "广西",
+        "城市": "桂林市",
+        "adcode": 450300.0,
+        "adcode_province": 450000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3056665,
+          25.28772663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "桂林两江四湖•象山景区",
+        "省": "广西",
+        "城市": "桂林市",
+        "adcode": 450300.0,
+        "adcode_province": 450000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.2393155,
+          22.73922719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "槟榔谷黎苗文化旅游区",
+        "省": "海南",
+        "城市": "三亚市",
+        "adcode": 460200.0,
+        "adcode_province": 460000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.6720695,
+          18.40365835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "海南呀诺达雨林文化旅游区",
+        "省": "海南",
+        "城市": "三亚市",
+        "adcode": 460200.0,
+        "adcode_province": 460000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.6549367,
+          18.45828273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "海南分界洲岛旅游区",
+        "省": "海南",
+        "城市": "三亚市",
+        "adcode": 460200.0,
+        "adcode_province": 460000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.1864899,
+          18.59327573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "大小洞天旅游区",
+        "省": "海南",
+        "城市": "三亚市",
+        "adcode": 460200.0,
+        "adcode_province": 460000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.164689,
+          18.306733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "南山文化旅游区",
+        "省": "海南",
+        "城市": "三亚市",
+        "adcode": 460200.0,
+        "adcode_province": 460000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.2153309,
+          18.30514623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "蝶支洲岛旅游区",
+        "省": "海南",
+        "城市": "三亚市",
+        "adcode": 460200.0,
+        "adcode_province": 460000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.325494,
+          19.70658399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆大足石刻景区",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8013538,
+          29.75454619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆巫山小三峡—小小三峡",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.894762,
+          31.08632686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆武隆喀斯特旅游区（天生三桥·仙女山·芙蓉洞）",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.8117028,
+          29.43936096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆酉阳桃花源景区",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.7589134,
+          28.86431924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆万盛黑山谷景区",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.004774,
+          28.89374503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆南川金佛山景区",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.134485,
+          29.05536154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆江津四面山景区",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.3974594,
+          28.62210062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "重庆市广益中学校园景区",
+        "省": "重庆",
+        "城市": "重庆市",
+        "adcode": 500000.0,
+        "adcode_province": 500000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.606833,
+          29.53960702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "青城山--都江堰旅游景区",
+        "省": "四川",
+        "城市": "成都市",
+        "adcode": 510100.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.569195,
+          30.91174151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "峨眉山风景名胜区",
+        "省": "四川",
+        "城市": "乐山市",
+        "adcode": 511100.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.356304,
+          29.57382699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "九寨沟风景名胜区",
+        "省": "四川",
+        "城市": "阿坝藏族羌族自治州",
+        "adcode": 513200.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9212244,
+          33.16322282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "乐山大佛景区",
+        "省": "四川",
+        "城市": "乐山市",
+        "adcode": 511100.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78144,
+          29.54754105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "黄龙国家级风景名胜区",
+        "省": "四川",
+        "城市": "阿坝藏族羌族自治州",
+        "adcode": 513200.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8264623,
+          32.75598045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "汶川特别旅游区",
+        "省": "四川",
+        "城市": "阿坝藏族羌族自治州",
+        "adcode": 513200.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.4259366,
+          30.93764219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "北川羌城旅游区",
+        "省": "四川",
+        "城市": "绵阳市",
+        "adcode": 510700.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.470432,
+          31.61341293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "邓小平故里旅游区",
+        "省": "四川",
+        "城市": "广安市",
+        "adcode": 511600.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6432794,
+          30.52526672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "阆中古城",
+        "省": "四川",
+        "城市": "南充市",
+        "adcode": 511300.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9776705,
+          31.58086035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "剑门蜀道剑门关旅游景区",
+        "省": "四川",
+        "城市": "广元市",
+        "adcode": 510800.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.5761832,
+          32.2203484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "朱德故里景区",
+        "省": "四川",
+        "城市": "南充市",
+        "adcode": 511300.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6083529,
+          31.46824779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "泸定海螺沟冰川森林公园",
+        "省": "四川",
+        "城市": "甘孜藏族自治州",
+        "adcode": 513300.0,
+        "adcode_province": 510000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.0196,
+          29.592001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "安顺市黄果树旅游景区",
+        "省": "贵州",
+        "城市": "安顺市",
+        "adcode": 520400.0,
+        "adcode_province": 520000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.679142,
+          25.98577802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "毕节市大方九洞天景区",
+        "省": "贵州",
+        "城市": "毕节市",
+        "adcode": 520500.0,
+        "adcode_province": 520000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.346771,
+          26.985468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "铜仁市德江白果坨湿地公园旅游景区",
+        "省": "贵州",
+        "城市": "铜仁市",
+        "adcode": 520600.0,
+        "adcode_province": 520000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.2811533,
+          28.19586839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "昆明石林风景名胜区",
+        "省": "云南",
+        "城市": "昆明市",
+        "adcode": 530100.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.330054,
+          24.81762502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "丽江玉龙雪山景区",
+        "省": "云南",
+        "城市": "丽江市",
+        "adcode": 530700.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.2104791,
+          27.14013781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "大理崇圣寺三塔文化旅游区",
+        "省": "云南",
+        "城市": "大理",
+        "adcode": 532900.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.149979,
+          25.71005632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "丽江古城景区",
+        "省": "云南",
+        "城市": "丽江市",
+        "adcode": 530700.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.2420474,
+          26.87646406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "中国科学院西双版纳热带植物园景区",
+        "省": "云南",
+        "城市": "西双版纳",
+        "adcode": 532800.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.262951,
+          21.93160414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "迪庆香格里拉普达措景区",
+        "省": "云南",
+        "城市": "迪庆",
+        "adcode": 533400.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.91313102,
+          27.80828301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "腾冲火山热海旅游区",
+        "省": "云南",
+        "城市": "保山市",
+        "adcode": 530500.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.44714898,
+          24.95307661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "蒲缥塘子沟景区",
+        "省": "云南",
+        "城市": "昆明市",
+        "adcode": 530100.0,
+        "adcode_province": 530000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.01337933,
+          25.02776319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "布达拉宫",
+        "省": "西藏",
+        "城市": "拉萨市",
+        "adcode": 540100.0,
+        "adcode_province": 540000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.12503814,
+          29.66034555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "大昭寺",
+        "省": "西藏",
+        "城市": "拉萨市",
+        "adcode": 540100.0,
+        "adcode_province": 540000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.13955709,
+          29.65597912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "扎什伦布寺",
+        "省": "西藏",
+        "城市": "日喀则市",
+        "adcode": 540200.0,
+        "adcode_province": 540000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.87854539,
+          29.27102068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "秦始皇帝陵博物院",
+        "省": "陕西",
+        "城市": "西安市",
+        "adcode": 610100.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.2891975,
+          34.39220273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "陕西华清宫文化旅游景区",
+        "省": "陕西",
+        "城市": "西安市",
+        "adcode": 610100.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.2216189,
+          34.36403447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "西安大雁塔-大唐芙蓉园景区",
+        "省": "陕西",
+        "城市": "西安市",
+        "adcode": 610100.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.9807244,
+          34.2189487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "西安城墙·碑林历史文化景区",
+        "省": "陕西",
+        "城市": "西安市",
+        "adcode": 610100.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.9322891,
+          34.26542434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "法门文化景区",
+        "省": "陕西",
+        "城市": "宝鸡市",
+        "adcode": 610300.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.908118,
+          34.440763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "太白山旅游景区",
+        "省": "陕西",
+        "城市": "宝鸡市",
+        "adcode": 610300.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.8216508,
+          34.06174491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "华山景区",
+        "省": "陕西",
+        "城市": "渭南市",
+        "adcode": 610500.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.073028,
+          34.49764651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "延安革命纪念地景区",
+        "省": "陕西",
+        "城市": "延安市",
+        "adcode": 610600.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.4840345,
+          36.61493648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "黄帝陵景区",
+        "省": "陕西",
+        "城市": "延安市",
+        "adcode": 610600.0,
+        "adcode_province": 610000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.2763202,
+          35.59133533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "嘉峪关文物景区",
+        "省": "甘肃",
+        "城市": "嘉峪关市",
+        "adcode": 620200.0,
+        "adcode_province": 620000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.22647297,
+          39.80646608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "敦煌鸣沙山·月牙泉景区",
+        "省": "甘肃",
+        "城市": "酒泉市",
+        "adcode": 620900.0,
+        "adcode_province": 620000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.68519365,
+          40.09489838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "张掖七彩丹霞景区",
+        "省": "甘肃",
+        "城市": "张掖市",
+        "adcode": 620700.0,
+        "adcode_province": 620000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.075745,
+          38.9608231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "麦积山景区",
+        "省": "甘肃",
+        "城市": "天水市",
+        "adcode": 620500.0,
+        "adcode_province": 620000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.015432,
+          34.35718803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "青海湖景区",
+        "省": "青海",
+        "城市": "西宁市",
+        "adcode": 630100.0,
+        "adcode_province": 630000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.502975,
+          36.58430191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "塔尔寺旅游区",
+        "省": "青海",
+        "城市": "西宁市",
+        "adcode": 630100.0,
+        "adcode_province": 630000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.5745412,
+          36.4935971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "沙湖旅游区",
+        "省": "宁夏",
+        "城市": "石嘴山",
+        "adcode": 640200.0,
+        "adcode_province": 640000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.3682117,
+          38.80752326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "港中旅（宁夏）沙坡头旅游区",
+        "省": "宁夏",
+        "城市": "中卫市",
+        "adcode": 640500.0,
+        "adcode_province": 640000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.01673,
+          37.46367198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "镇北堡西部影城",
+        "省": "宁夏",
+        "城市": "银川市",
+        "adcode": 640100.0,
+        "adcode_province": 640000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.077995,
+          38.62169013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "石嘴山市煤城·记忆文化旅游景区",
+        "省": "宁夏",
+        "城市": "石嘴山",
+        "adcode": 640200.0,
+        "adcode_province": 640000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.404611,
+          38.99408107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "那拉提景区",
+        "省": "新疆",
+        "城市": "新源县 伊犁哈萨克自治州",
+        "adcode": 654000.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.03016472,
+          43.24602379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "佛山国家森林公园",
+        "省": "新疆",
+        "城市": "乌苏",
+        "adcode": 654200.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.56122497,
+          44.13172415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "喀纳斯景区",
+        "省": "新疆",
+        "城市": "布尔津县",
+        "adcode": 654300.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.13837696,
+          48.51353482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "千佛洞景区",
+        "省": "新疆",
+        "城市": "吉木萨尔县",
+        "adcode": 652300.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.13066292,
+          43.98573368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "新疆农业博览园",
+        "省": "新疆",
+        "城市": "吉木萨尔县",
+        "adcode": 652300.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.38233699,
+          44.05770217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "东天山风景名胜区",
+        "省": "新疆",
+        "城市": "哈密市",
+        "adcode": 650500.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.62442098,
+          43.78613129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "火焰山景区",
+        "省": "新疆",
+        "城市": "吐鲁番市",
+        "adcode": 650400.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.52113998,
+          42.92526095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "博斯腾湖景区（大河口）",
+        "省": "新疆",
+        "城市": "博湖县",
+        "adcode": 652800.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.74035523,
+          41.914728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "阿克陶县奥依塔克冰川公园景区",
+        "省": "新疆",
+        "城市": "阿克陶县",
+        "adcode": 653000.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5308157,
+          38.98523624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "南湖旅游度假区",
+        "省": "新疆",
+        "城市": "英吉沙县",
+        "adcode": 653100.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.20093373,
+          38.90004339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "景区名称": "达瓦昆沙漠旅游风景区",
+        "省": "新疆",
+        "城市": "岳普湖县",
+        "adcode": 653100.0,
+        "adcode_province": 650000.0,
+        "景区等级": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.04653233,
+          39.05673543
+        ]
+      }
+    }
+  ]
+}
