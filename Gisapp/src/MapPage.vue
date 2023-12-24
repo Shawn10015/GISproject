@@ -30,11 +30,6 @@ export default {
         const get_city = ref(null);
         const currentClick = reactive({ latitude: null, longtitude: null });
 
-        const cities = reactive([
-            { city: '预设城市1', population: '1000000', details: '景点1, 景点2' },
-            { city: '预设城市2', population: '500000', details: '景点3, 景点4' },
-            // 可以添加更多预设城市
-        ]);
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
         // 显示城市的详细信息
@@ -49,10 +44,6 @@ export default {
         function radians(degrees) {
             return degrees * (Math.PI / 180);
         }
-
-        // click potin coordinates
-        // const click_lon = 109.00;
-        // const click_lat = 40.00;
 
         const choose_radius = 200;
 
@@ -74,17 +65,19 @@ export default {
                     const city_response = await axios.get('http://localhost:5000/city/cities');
                     const cityData = city_response.data;
                     center_cities.value = cityData.map(city => ({
+                        adcode: city.adcode,
                         name: city.name,
                         center: city.center,
                         center_longtitude: city.center[0],
                         center_latitude: city.center[1],
-                        geom: city.geom
+                        geom: city.geom,
+                        population: city.population
                     }));
-                const in_circle_cities = center_cities.value.filter(city => {
+                    const in_circle_cities = center_cities.value.filter(city => {
                         const distance = haversine(currentClick.longtitude, currentClick.latitude, city.center_longtitude, city.center_latitude);
                         return distance <= choose_radius;
-                });
-                console.log(in_circle_cities)
+                    });
+                    console.log(in_circle_cities)
 
                 } catch (error) {
                     console.error(error)
