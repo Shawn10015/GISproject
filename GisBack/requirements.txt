@@ -3,3 +3,4 @@ flask_sqlalchemy
 psycopg2-binary
 geoalchemy2
 flasgger
+flask-cors

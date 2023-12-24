@@ -20,11 +20,15 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { ref, onMounted, onUnmounted, reactive } from 'vue';  
+import axios from 'axios';
 
 export default {
     name: "MapPage",
     setup() {
         const map = ref(null);
+        const center_cities = ref([]);
+        const get_city = ref(null);
+
         const cities = reactive([
             { city: '预设城市1', population: '1000000', details: '景点1, 景点2' },
             { city: '预设城市2', population: '500000', details: '景点3, 景点4' },
@@ -40,17 +44,66 @@ export default {
 
         let largeCircle = ref(null); // 用于跟踪当前的大圆
         let smallCircle = ref(null); // 用于跟踪当前的小圆
-        // const info = reactive({
-        //     basicInfo: '',
-        //     detailedInfo: ''
-        // });
+
 
         onMounted(() => {
-            map.value = L.map("map").setView([59.420161, 30.01832], 15);
+
+            axios.get('http://localhost:5000/city/cities')
+                .then(response => {
+                    console.log(response);
+                    const cities_data = response.data;
+
+                    center_cities.value = cities_data.map(city => ({
+                        name: city.name,
+                        center: city.center,
+                        center_longtitude: city.center[0],
+                        center_latitude: city.center[1],
+                        geom: city.geom
+                    }));
+                    console.log("New value:", center_cities.value)
+
+                    function radians(degrees) {
+                        return degrees * (Math.PI / 180);
+                    }
+
+                    // click potin coordinates
+                    const click_lon = 109.00;
+                    const click_lat = 40.00;
+
+                    const choose_radius = 200;
+
+                    function haversine(lon1, lat1, lon2, lat2) {
+                        //Earth Radius
+                        const R = 6371;
+                        const difference_lat = radians(lat2 - lat1);
+                        const difference_lon = radians(lon2 - lon1);
+
+                        const half_eqution = Math.sin(difference_lat / 2) * Math.sin(difference_lat / 2) + Math.cos(radians(lat1)) * Math.cos(radians(lat2)) * Math.sin(difference_lon / 2) * Math.sin(difference_lon / 2);
+                        const final_eqution = 2 * Math.atan2(Math.sqrt(half_eqution), Math.sqrt(1 - half_eqution));
+
+                        const distance = R * final_eqution;
+                        return distance;
+                    }
+
+
+                    const in_circle_cities = center_cities.value.filter(city => {
+                            const distance = haversine(click_lon, click_lat, city.center_longtitude, city.center_latitude);
+                            return distance <= choose_radius;
+                    });
+            
+                    console.log(in_circle_cities)
+
+                })
+                .catch(error => {
+                    console.error(error);
+                })
+
+
+            map.value = L.map("map").setView([33.3603, 108.5457], 6);
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                 attribution: "Map data &copy; OpenStreetMap contributors",
             }).addTo(map.value);
-
+            
             map.value.on('click', function(e) {
                 // 移除之前的圆和标记
                 if (largeCircle.value) {
@@ -59,14 +112,6 @@ export default {
                 if (smallCircle.value) {
                     smallCircle.value.remove();
                 }
-
-                // const { lat, lng } = e.latlng;
-                // const city = "预设城市";
-                // const population = "预设人口";
-
-                // // 更新信息
-                // info.basicInfo = `坐标: ${lat.toFixed(5)}, ${lng.toFixed(5)}`;
-                // info.detailedInfo = `城市: ${city}<br>人口: ${population}`;
 
                 // 创建大圆
                 largeCircle.value = L.circle(e.latlng, {
@@ -101,7 +146,15 @@ export default {
         });
 
         // return { map, basicInfo: info.basicInfo, detailedInfo: info.detailedInfo };
-        return { map, cities, selectedCity, selectedCityDetails, showDetails };
+        return {
+            map,
+            cities, 
+            selectedCity, 
+            selectedCityDetails, 
+            showDetails,
+            center_cities,
+            get_city,
+        };
     }
 }
 </script>
