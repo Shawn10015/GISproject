@@ -4,7 +4,7 @@
         <div class="info-panel">
             <div class="basic-info">
                 <h2>基本信息</h2>
-                <button v-for="(info, index) in center_cities" :key="index" class="city-button" @click="showDetails(info)">
+                <button v-for="(info, index) in in_circle_cities" :key="index" class="city-button" @click="showDetails(info)">
                     Name: {{ info.name }} Poupulation: {{ info.population }}
                 </button>
             </div>
@@ -33,13 +33,14 @@ export default {
         const center_cities = ref([]);
         const get_city = ref(null);
         const currentClick = reactive({ latitude: null, longtitude: null });
+        const in_circle_cities = ref([]);
 
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
         // 显示城市的详细信息
         const showDetails = () => {
-            selectedCity.value = center_cities.value.name;
-            selectedCityDetails.value = center_cities.value.population;
+            selectedCity.value = in_circle_cities.value.name;
+            selectedCityDetails.value = in_circle_cities.value.population;
         };
 
         let largeCircle = ref(null); // 用于跟踪当前的大圆
@@ -77,7 +78,7 @@ export default {
                         geom: city.geom,
                         population: city.population
                     }));
-                    const in_circle_cities = center_cities.value.filter(city => {
+                    in_circle_cities.value = center_cities.value.filter(city => {
                         const distance = haversine(currentClick.longtitude, currentClick.latitude, city.center_longtitude, city.center_latitude);
                         return distance <= choose_radius;
                     });
@@ -149,7 +150,8 @@ export default {
             center_cities,
             get_city,
             get_response_data,
-            currentClick
+            currentClick,
+            in_circle_cities
         };
     }
 }
