@@ -45,60 +45,52 @@ export default {
         let largeCircle = ref(null); // 用于跟踪当前的大圆
         let smallCircle = ref(null); // 用于跟踪当前的小圆
 
-        let ref
-        onMounted(() => {
+        function radians(degrees) {
+            return degrees * (Math.PI / 180);
+        }
 
-            axios.get('http://localhost:5000/city/cities')
-                .then(response => {
-                    console.log(response);
-                    const cities_data = response.data;
+        // click potin coordinates
+        const click_lon = 109.00;
+        const click_lat = 40.00;
 
-                    center_cities.value = cities_data.map(city => ({
+        const choose_radius = 200;
+
+        function haversine(lon1, lat1, lon2, lat2) {
+            //Earth Radius
+            const R = 6371;
+            const difference_lat = radians(lat2 - lat1);
+            const difference_lon = radians(lon2 - lon1);
+
+            const half_eqution = Math.sin(difference_lat / 2) * Math.sin(difference_lat / 2) + Math.cos(radians(lat1)) * Math.cos(radians(lat2)) * Math.sin(difference_lon / 2) * Math.sin(difference_lon / 2);
+            const final_eqution = 2 * Math.atan2(Math.sqrt(half_eqution), Math.sqrt(1 - half_eqution));
+
+            const distance = R * final_eqution;
+            return distance;
+        }
+
+        async function get_response_data() {
+                try {
+                    const city_response = await axios.get('http://localhost:5000/city/cities');
+                    const cityData = city_response.data;
+                    center_cities.value = cityData.map(city => ({
                         name: city.name,
                         center: city.center,
                         center_longtitude: city.center[0],
                         center_latitude: city.center[1],
                         geom: city.geom
                     }));
-                    console.log("New value:", center_cities.value)
+                const in_circle_cities = center_cities.value.filter(city => {
+                        const distance = haversine(click_lon, click_lat, city.center_longtitude, city.center_latitude);
+                        return distance <= choose_radius;
+                });
+                console.log(in_circle_cities)
 
-                    function radians(degrees) {
-                        return degrees * (Math.PI / 180);
-                    }
+                } catch (error) {
+                    console.error(error)
+                }
+            }
 
-                    // click potin coordinates
-                    const click_lon = 109.00;
-                    const click_lat = 40.00;
-
-                    const choose_radius = 200;
-
-                    function haversine(lon1, lat1, lon2, lat2) {
-                        //Earth Radius
-                        const R = 6371;
-                        const difference_lat = radians(lat2 - lat1);
-                        const difference_lon = radians(lon2 - lon1);
-
-                        const half_eqution = Math.sin(difference_lat / 2) * Math.sin(difference_lat / 2) + Math.cos(radians(lat1)) * Math.cos(radians(lat2)) * Math.sin(difference_lon / 2) * Math.sin(difference_lon / 2);
-                        const final_eqution = 2 * Math.atan2(Math.sqrt(half_eqution), Math.sqrt(1 - half_eqution));
-
-                        const distance = R * final_eqution;
-                        return distance;
-                    }
-
-
-                    const in_circle_cities = center_cities.value.filter(city => {
-                            const distance = haversine(click_lon, click_lat, city.center_longtitude, city.center_latitude);
-                            return distance <= choose_radius;
-                    });
-            
-                    console.log(in_circle_cities)
-
-                })
-                .catch(error => {
-                    console.error(error);
-                })
-
-
+        onMounted(() => {
             map.value = L.map("map").setView([33.3603, 108.5457], 6);
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                 attribution: "Map data &copy; OpenStreetMap contributors",
@@ -131,6 +123,7 @@ export default {
 
                 showDetails(cities[0]);
             });    
+            get_response_data();
         });
 
         onUnmounted(() => {
@@ -154,6 +147,7 @@ export default {
             showDetails,
             center_cities,
             get_city,
+            get_response_data
         };
     }
 }
