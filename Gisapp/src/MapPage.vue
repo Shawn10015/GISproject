@@ -4,8 +4,8 @@
         <div class="info-panel">
             <div class="basic-info">
                 <h2>基本信息</h2>
-                <button v-for="(info, index) in cities" :key="index" class="city-button" @click="showDetails(info)">
-                    {{ info.city }} (人口: {{ info.population }})
+                <button v-for="(info, index) in center_cities" :key="index" class="city-button" @click="showDetails(info)">
+                    Name: {{ info.name }} Poupulation: {{ info.population }}
                 </button>
             </div>
             <div class="detailed-info">
@@ -37,9 +37,9 @@ export default {
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
         // 显示城市的详细信息
-        const showDetails = (cityInfo) => {
-            selectedCity.value = cityInfo.city;
-            selectedCityDetails.value = cityInfo.details;
+        const showDetails = () => {
+            selectedCity.value = center_cities.value.name;
+            selectedCityDetails.value = center_cities.value.population;
         };
 
         let largeCircle = ref(null); // 用于跟踪当前的大圆
@@ -123,7 +123,7 @@ export default {
                     radius: 200000 // 半径 200 公里
                 }).addTo(map.value);
 
-                showDetails(cities[0]);
+                showDetails(center_cities.value[0]);
                 get_response_data();
             });    
         });
@@ -143,7 +143,6 @@ export default {
         // return { map, basicInfo: info.basicInfo, detailedInfo: info.detailedInfo };
         return {
             map,
-            cities, 
             selectedCity, 
             selectedCityDetails, 
             showDetails,
