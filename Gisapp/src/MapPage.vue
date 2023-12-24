@@ -28,7 +28,7 @@ export default {
         const map = ref(null);
         const center_cities = ref([]);
         const get_city = ref(null);
-        const currentClick = reactive({ latitude: null, longtitude: null }); // 存储当前点击的坐标
+        const currentClick = reactive({ latitude: null, longtitude: null });
 
         const cities = reactive([
             { city: '预设城市1', population: '1000000', details: '景点1, 景点2' },
@@ -51,8 +51,8 @@ export default {
         }
 
         // click potin coordinates
-        const click_lon = 109.00;
-        const click_lat = 40.00;
+        // const click_lon = 109.00;
+        // const click_lat = 40.00;
 
         const choose_radius = 200;
 
@@ -81,7 +81,7 @@ export default {
                         geom: city.geom
                     }));
                 const in_circle_cities = center_cities.value.filter(city => {
-                        const distance = haversine(click_lon, click_lat, city.center_longtitude, city.center_latitude);
+                        const distance = haversine(currentClick.longtitude, currentClick.latitude, city.center_longtitude, city.center_latitude);
                         return distance <= choose_radius;
                 });
                 console.log(in_circle_cities)
@@ -127,8 +127,8 @@ export default {
                 }).addTo(map.value);
 
                 showDetails(cities[0]);
+                get_response_data();
             });    
-            get_response_data();
         });
 
         onUnmounted(() => {
@@ -152,7 +152,8 @@ export default {
             showDetails,
             center_cities,
             get_city,
-            get_response_data
+            get_response_data,
+            currentClick
         };
     }
 }
