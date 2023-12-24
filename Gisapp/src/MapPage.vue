@@ -79,6 +79,18 @@ export default {
             }
         }
 
+        async function get_info_details(city) {
+            try {
+                const info_details_response = await axios.get(`http://localhost:5000/info/info/${city.adcode}`)
+                console.log(info_details_response);
+                city.info = info_details_response.data;
+                console.log(city);
+                return city;
+            } catch (error) {
+                console.error(`Error adcode ${city.adcode}`)
+            }
+        }
+
         async function get_response_data() {
                 try {
                     const city_response = await axios.get('http://localhost:5000/city/cities');
@@ -101,8 +113,12 @@ export default {
                     const add_province = in_circle_cities.value.map(city =>
                         get_province_data(city)
                     );
-
                     in_circle_cities.value = await Promise.all(add_province);
+
+                    const add_info = in_circle_cities.value.map(city => 
+                        get_info_details(city)
+                    );
+                    in_circle_cities.value = await Promise.all(add_info);
 
                     console.log(in_circle_cities)
 
