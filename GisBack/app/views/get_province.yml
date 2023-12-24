@@ -1,0 +1,31 @@
+tags:
+  - Province
+summary: "get province"
+description: "return singel province"
+parameters:
+  - name: "adcode"
+    in: "path"
+    required: true
+    type: "integer"
+responses:
+  200:
+    description: "Successful"
+    schema:
+      $ref: "#/definitions/Province"
+  404:
+    description: "page not found"
+definitions:
+  Province:
+    type: "object"
+    properties:
+      adcode:
+        type: "integer"
+      province:
+        type: "string"
+      geom:
+        type: "object"
+        properties:
+          type:
+            type: "string"
+          coordinates:
+            type: "number"

@@ -1,0 +1,30 @@
+tags:
+  - Info
+summary: "get info"
+description: "return singel info"
+parameters:
+  - name: "adcode"
+    in: "path"
+    required: true
+    type: "integer"
+responses:
+  200:
+    description: "Successful"
+    schema:
+      $ref: "#/definitions/Info"
+  404:
+    description: "page not found"
+definitions:
+  Info:
+    type: "object"
+    properties:
+      adcode:
+        type: "integer"
+      childrenNum:
+        type: "integer"
+      level:
+        type: "string"
+      scenic_spots_name:
+        type: "array"
+        items:
+          type: "string"

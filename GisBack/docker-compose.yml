@@ -4,7 +4,7 @@ services:
   flask-app:
     build: .
     ports:
-      - "5000:80"
+      - "5000:5000"
     environment:
       - SOME_ENV_VARIABLE=value
     networks:

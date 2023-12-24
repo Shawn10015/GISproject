@@ -17,3 +17,13 @@ docker-compose up -d
 # 删除容器
 
 docker-compose down
+
+# Swagger
+
+localhost:5000/apidocs
+
+#Port
+
+## Gisapp 8080
+## Gisback 5000
+## Gisdata 80, localhost

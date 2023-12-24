@@ -1,0 +1,32 @@
+tags:
+  - Scenic Spot
+summary: "get scenic spots"
+description: "Get all scenic spots"
+responses:
+  200:
+    description: "Successful"
+    schema:
+      type: "array"
+      items:
+        $ref: "#/definitions/Scenic_spots"
+  404:
+    description: "page not found"
+definitions:
+  Scenic_spots:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      adcode:
+        type: "integer"
+      scenic_spots_name:
+        type: "string"
+      scenic_spots_level:
+        type: "string"
+      geom:
+        type: "object"
+        properties:
+          type:
+            type: "string"
+          coordinates:
+            type: "number"

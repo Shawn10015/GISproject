@@ -1,0 +1,32 @@
+tags:
+  - City
+summary: "get cities"
+description: "Get all cities"
+responses:
+  200:
+    description: "Successful"
+    schema:
+      type: "array"
+      items:
+        $ref: "#/definitions/City"
+  404:
+    description: "page not found"
+definitions:
+  City:
+    type: "object"
+    properties:
+      adcode:
+        type: "integer"
+      name:
+        type: "string"
+      center:
+        type: "number"
+      population:
+        type: "integer"
+      geom:
+        type: "object"
+        properties:
+          type:
+            type: "string"
+          coordinates:
+            type: "number"

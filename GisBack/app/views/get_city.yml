@@ -1,0 +1,36 @@
+tags:
+  - City
+summary: "get city"
+description: "return singel city"
+parameters:
+  - name: "adcode"
+    in: "path"
+    required: true
+    type: "integer"
+responses:
+  200:
+    description: "Successful"
+    schema:
+      $ref: "#/definitions/City"
+  404:
+    description: "page not found"
+definitions:
+  City:
+    type: "object"
+    properties:
+      adcode:
+        type: "integer"
+      name:
+        type: "string"
+      center:
+        type: "number"
+      population:
+        type: "integer"
+      geom:
+        type: "object"
+        properties:
+          type:
+            type: "string"
+          coordinates:
+            type: "number"
+

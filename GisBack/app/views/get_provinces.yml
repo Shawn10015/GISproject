@@ -1,0 +1,28 @@
+tags:
+  - Province
+summary: "get provinces"
+description: "Get all provinces"
+responses:
+  200:
+    description: "Successful"
+    schema:
+      type: "array"
+      items:
+        $ref: "#/definitions/Province"
+  404:
+    description: "page not found"
+definitions:
+  Province:
+    type: "object"
+    properties:
+      adcode:
+        type: "integer"
+      province:
+        type: "string"
+      geom:
+        type: "object"
+        properties:
+          type:
+            type: "string"
+          coordinates:
+            type: "number"
