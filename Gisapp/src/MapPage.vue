@@ -4,14 +4,18 @@
         <div class="info-panel">
             <div class="basic-info">
                 <h2>基本信息</h2>
-                <p v-for="(info, index) in cities" :key="index" @click="showDetails(info)">
+                <button v-for="(info, index) in cities" :key="index" class="city-button" @click="showDetails(info)">
                     {{ info.city }} (人口: {{ info.population }})
-                </p>
+                </button>
             </div>
             <div class="detailed-info">
                 <h2>详细信息</h2>
                 <p v-if="selectedCity">{{ selectedCityDetails }}</p>
             </div>
+            <!-- <div class="attraction-info">
+                <h2>景点信息</h2>
+                <p v-if="selectedCityAttractions">{{ selectedCityAttractions }}</p>
+            </div> -->
         </div>
     </div>
 </template>
@@ -168,9 +172,22 @@ export default {
     box-sizing: border-box;
     overflow-y: auto; /* 如果内容过多，可滚动查看 */
 }
-/* .basic-info, .detailed-info {
-    flex: 1;
-} */
+.city-button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.city-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
 .container {
     display: flex;
     height: 100vh;
