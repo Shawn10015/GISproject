@@ -22,8 +22,8 @@ def get_scenic_id(id):
 @scenic_spots_bp.route('/scenic/adcode/<int:adcode>', methods=['GET'])
 @swag_from('get_scenic_by_adcode.yml')
 def get_scenic_adcode(adcode):
-    scenic_spots = Scenic_spots.query.get(adcode)
+    scenic_spots = Scenic_spots.query.filter_by(adcode=adcode).all()
     if scenic_spots:
-        return jsonify(scenic_spots.to_dict())
+        return jsonify([spot.to_dict() for spot in scenic_spots])
     else:
         return jsonify({"error": "City not found"}), 404
