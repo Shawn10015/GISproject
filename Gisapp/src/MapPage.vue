@@ -28,6 +28,7 @@ export default {
         const map = ref(null);
         const center_cities = ref([]);
         const get_city = ref(null);
+        const currentClick = reactive({ latitude: null, longtitude: null }); // 存储当前点击的坐标
 
         const cities = reactive([
             { city: '预设城市1', population: '1000000', details: '景点1, 景点2' },
@@ -112,6 +113,10 @@ export default {
                 if (smallCircle.value) {
                     smallCircle.value.remove();
                 }
+
+                currentClick.latitude = e.latlng.lat; // 纬度
+                currentClick.longtitude = e.latlng.lng; // 经度
+                console.log(`Location: Longtitude ${currentClick.longtitude}, Latitude ${currentClick.latitude}`);
 
                 // 创建大圆
                 largeCircle.value = L.circle(e.latlng, {
