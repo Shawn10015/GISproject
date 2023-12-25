@@ -70,24 +70,13 @@ export default {
         }
 
         function calculate_area(city) {
-            let totalArea = 0;
             city.geom.coordinates.forEach(polygon => {
                 const coordinates = polygon[0];
                 const turfPolygon = turf.polygon([coordinates]);
                 const area = turf.area(turfPolygon);
-                totalArea += area;
+                city.area = area;
             });
-
-            console.log("Total Area", totalArea);
-            return totalArea;
-            // console.log("!##$@$", coordinates);
-            // const polygon = turf.polygon([coordinates]);
-            // console.log("asd asd ", polygon)
-            // const area = turf.area(polygon);
-            // console.log("Area", area)
-            // console.log(area);
-
-            // return area;
+            return city;
         }
 
 
