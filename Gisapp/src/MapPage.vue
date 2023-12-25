@@ -27,6 +27,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { ref, onMounted, onUnmounted, reactive } from 'vue';  
 import axios from 'axios';
+import * as turf from '@turf/turf';
 
 export default {
     name: "MapPage",
@@ -36,6 +37,7 @@ export default {
         const get_city = ref(null);
         const currentClick = reactive({ latitude: null, longtitude: null });
         const in_circle_cities = ref([]);
+        const select_scenic_data = ref(null);
 
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
@@ -65,6 +67,39 @@ export default {
 
             const distance = R * final_eqution;
             return distance;
+        }
+
+        function calculate_area(city) {
+            let totalArea = 0;
+            city.geom.coordinates.forEach(polygon => {
+                const coordinates = polygon[0];
+                const turfPolygon = turf.polygon([coordinates]);
+                const area = turf.area(turfPolygon);
+                totalArea += area;
+            });
+
+            console.log("Total Area", totalArea);
+            return totalArea;
+            // console.log("!##$@$", coordinates);
+            // const polygon = turf.polygon([coordinates]);
+            // console.log("asd asd ", polygon)
+            // const area = turf.area(polygon);
+            // console.log("Area", area)
+            // console.log(area);
+
+            // return area;
+        }
+
+
+        async function get_scenic_data() {
+            try {
+                const scenic_response = await axios.get(`http://localhost:5000/scenic/scenic/id/1`)
+                const scenicData = scenic_response.data;
+                select_scenic_data.value = scenicData
+                console.log("Scenic spots:", select_scenic_data.value)
+            } catch (error) {
+                console.error(`Error scenic id ${select_scenic_data.value.id}`)
+            } 
         }
 
         async function get_province_data(city) {
@@ -120,8 +155,13 @@ export default {
                     );
                     in_circle_cities.value = await Promise.all(add_info);
 
-                    console.log(in_circle_cities)
+                    const add_area = in_circle_cities.value.map(city => 
+                        calculate_area(city)
+                    );
+                    in_circle_cities.value = await Promise.all(add_area);
 
+                    console.log(in_circle_cities)
+                    get_scenic_data()
                 } catch (error) {
                     console.error(error)
                 }
@@ -185,6 +225,8 @@ export default {
             map,
             selectedCity, 
             selectedCityDetails, 
+            select_scenic_data,
+            get_scenic_data,
             showDetails,
             center_cities,
             get_city,
