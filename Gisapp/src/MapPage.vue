@@ -5,8 +5,8 @@
             <div class="basic-info">
                 <h2>基本信息</h2>
                 <div v-if="in_circle_cities.length > 0">
-                <button v-for="(info, index) in in_circle_cities" :key="index" class="city-button" @click="showDetails(info)">
-                    Name: {{ info.name }} Poupulation: {{ info.population }}
+                <button v-for="city in in_circle_cities" :key="city.adcode" class="city-button" @click="showDetails(city.adcode)">
+                    Name: {{ city.name }} Poupulation: {{ city.population }}
                 </button>
                 </div>
             </div>
@@ -14,10 +14,10 @@
                 <h2>详细信息</h2>
                 <p v-if="selectedCity">{{ selectedCityDetails }}</p>
             </div>
-            <!-- <div class="attraction-info">
+            <div class="scenic-info">
                 <h2>景点信息</h2>
-                <p v-if="selectedCityAttractions">{{ selectedCityAttractions }}</p>
-            </div> -->
+                <p v-if="selectedCityScenics">{{ selectedCityScenics }}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -42,9 +42,32 @@ export default {
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
         // 显示城市的详细信息
-        const showDetails = () => {
-            selectedCity.value = in_circle_cities.value.name;
-            selectedCityDetails.value = in_circle_cities.value.population;
+        const showDetails = async (adcode) => {
+            console.log("Selected City Adcode:", adcode);
+            const selectedCityInfo = in_circle_cities.value.find(city => city.adcode === adcode);
+            if (!selectedCityInfo) {
+                selectedCityDetails.value = '未找到城市';
+                return;
+            }
+            console.log("Selected City:", selectedCityInfo);
+
+            selectedCity.value = selectedCityInfo.name;
+            try {
+                const detailedInfo = await get_info_details(selectedCityInfo);
+                // 处理景点信息
+                let scenicSpots = 'null';
+                if (detailedInfo.info && detailedInfo.info.scenic_spots_info && detailedInfo.info.scenic_spots_info.length > 0) {
+                    scenicSpots = detailedInfo.info.scenic_spots_info.map(spot => spot.scenic_spots_name).join(', ');
+                }
+                selectedCityDetails.value = `所属省: ${detailedInfo.province || 'null'}\n` +
+                                            `child: ${(detailedInfo.info && detailedInfo.info.childrenNum) || 'null'}\n` +
+                                            `级别: ${(detailedInfo.info && detailedInfo.info.level) || 'null'}\n` +
+                                            `景点: ${scenicSpots}\n`;
+                                            // `景点: ${((detailedInfo.info && detailedInfo.info.scenic_spots_info && detailedInfo.info.scenic_spots_info[0]) ? detailedInfo.info.scenic_spots_info[0].scenic_spots_name : 'null')}\n`;
+            } catch (error) {
+                console.error("Error in get_info_details:", error);
+                selectedCityDetails.value = `所属省: null\nchild: null\n级别: null\n景点: null\n`;
+            }
         };
 
         let largeCircle = ref(null); // 用于跟踪当前的大圆
@@ -259,5 +282,8 @@ export default {
 #map {
     width: 80%;
     height: 100%;
+}
+.detailed-info p {
+    white-space: pre-line;
 }
 </style>
