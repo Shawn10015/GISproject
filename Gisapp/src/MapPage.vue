@@ -3,7 +3,8 @@
         <div id="map"></div>
         <div class="info-panel">
             <div class="basic-info">
-                <h2>基本信息</h2>
+                <h2>Basic Information</h2>
+                <button @click="toggleMarkers">Scenic Spots</button>
                 <div v-if="in_circle_cities.length > 0">
                 <button v-for="city in in_circle_cities" :key="city.adcode" class="city-button" @click="showDetails(city.adcode)">
                     Name: {{ city.name }} Poupulation: {{ city.population }}
@@ -11,11 +12,11 @@
                 </div>
             </div>
             <div class="detailed-info">
-                <h2>详细信息</h2>
+                <h2>Details</h2>
                 <p v-if="selectedCity">{{ selectedCityDetails }}</p>
             </div>
             <div class="scenic-info">
-                <h2>景点信息</h2>
+                <h2>Scenic Spots Information</h2>
                 <p v-if="selectedCityScenics">{{ selectedCityScenics }}</p>
             </div>
         </div>
@@ -38,15 +39,19 @@ export default {
         const currentClick = reactive({ latitude: null, longtitude: null });
         const in_circle_cities = ref([]);
         const select_scenic_data = ref(null);
+        const spot_info = ref(null);
+        const scenic_points = ref([]);
+        const showMarkers = ref(false);
+        let markers = [];
 
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
-        // 显示城市的详细信息
+
         const showDetails = async (adcode) => {
             console.log("Selected City Adcode:", adcode);
             const selectedCityInfo = in_circle_cities.value.find(city => city.adcode === adcode);
             if (!selectedCityInfo) {
-                selectedCityDetails.value = '未找到城市';
+                selectedCityDetails.value = 'Do Not Find City';
                 return;
             }
             console.log("Selected City:", selectedCityInfo);
@@ -54,24 +59,24 @@ export default {
             selectedCity.value = selectedCityInfo.name;
             try {
                 const detailedInfo = await get_info_details(selectedCityInfo);
-                // 处理景点信息
-                let scenicSpots = 'null';
+
+                let spot_name = "Null";
                 if (detailedInfo.info && detailedInfo.info.scenic_spots_info && detailedInfo.info.scenic_spots_info.length > 0) {
-                    scenicSpots = detailedInfo.info.scenic_spots_info.map(spot => spot.scenic_spots_name).join(', ');
+                    spot_info.value = detailedInfo.info.scenic_spots_info;
                 }
-                selectedCityDetails.value = `所属省: ${detailedInfo.province || 'null'}\n` +
-                                            `child: ${(detailedInfo.info && detailedInfo.info.childrenNum) || 'null'}\n` +
-                                            `级别: ${(detailedInfo.info && detailedInfo.info.level) || 'null'}\n` +
-                                            `景点: ${scenicSpots}\n`;
-                                            // `景点: ${((detailedInfo.info && detailedInfo.info.scenic_spots_info && detailedInfo.info.scenic_spots_info[0]) ? detailedInfo.info.scenic_spots_info[0].scenic_spots_name : 'null')}\n`;
+                spot_name = spot_info.value.map(spot => spot.scenic_spots_name).join(',');
+                selectedCityDetails.value = `Province: ${detailedInfo.province || 'null'}\n` +
+                                            `Lower Area Num: ${(detailedInfo.info && detailedInfo.info.childrenNum) || 'null'}\n` +
+                                            `Level: ${(detailedInfo.info && detailedInfo.info.level) || 'null'}\n` +
+                                            `Scenic Spots: ${spot_name}\n`;
             } catch (error) {
                 console.error("Error in get_info_details:", error);
-                selectedCityDetails.value = `所属省: null\nchild: null\n级别: null\n景点: null\n`;
+                selectedCityDetails.value = `Province: null\nLower Area Num: null\nLevel: null\nScenic Spots: null\n`;
             }
         };
 
-        let largeCircle = ref(null); // 用于跟踪当前的大圆
-        let smallCircle = ref(null); // 用于跟踪当前的小圆
+        let largeCircle = ref(null); 
+        let smallCircle = ref(null); 
 
         function radians(degrees) {
             return degrees * (Math.PI / 180);
@@ -102,17 +107,30 @@ export default {
             return city;
         }
 
-
-        async function get_scenic_data() {
+        async function get_all_scenic() {
             try {
-                const scenic_response = await axios.get(`http://localhost:5000/scenic/scenic/id/1`)
-                const scenicData = scenic_response.data;
-                select_scenic_data.value = scenicData
-                console.log("Scenic spots:", select_scenic_data.value)
+                const all_scenics_response = await axios.get('http://localhost:5000/scenic/all_scenic_spots')
+                const all_scenic_data = all_scenics_response.data;
+                scenic_points.value = all_scenic_data.map(spot => ({
+                    coordinates: spot.geom.coordinates,
+                    name: spot.scenic_spots_name
+                }));
             } catch (error) {
-                console.error(`Error scenic id ${select_scenic_data.value.id}`)
-            } 
+                console.error(error)
+            }
         }
+        
+
+        // async function get_scenic_data(id) {
+        //     try {
+        //         const scenic_response = await axios.get(`http://localhost:5000/scenic/scenic/id/${id}`)
+        //         const scenicData = scenic_response.data;
+        //         select_scenic_data.value = scenicData
+        //         console.log("Scenic spots:", select_scenic_data.value)
+        //     } catch (error) {
+        //         console.error(`Error scenic id ${select_scenic_data.value.id}`)
+        //     } 
+        // }
 
         async function get_province_data(city) {
             try {
@@ -173,7 +191,7 @@ export default {
                     in_circle_cities.value = await Promise.all(add_area);
 
                     console.log(in_circle_cities)
-                    get_scenic_data()
+                    // get_scenic_data()
                 } catch (error) {
                     console.error(error)
                 }
@@ -181,11 +199,14 @@ export default {
 
 
         onMounted(() => {
-            map.value = L.map("map").setView([33.3603, 108.5457], 6);
-            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                attribution: "Map data &copy; OpenStreetMap contributors",
-            }).addTo(map.value);
-            
+            if (document.getElementById('map')) {
+                map.value = L.map("map").setView([33.3603, 108.5457], 5);
+                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    attribution: "Map data &copy; OpenStreetMap contributors",
+                }).addTo(map.value);
+            }
+            get_all_scenic()
+
             map.value.on('click', function(e) {
                 // 移除之前的圆和标记
                 if (largeCircle.value) {
@@ -195,24 +216,22 @@ export default {
                     smallCircle.value.remove();
                 }
 
-                currentClick.latitude = e.latlng.lat; // 纬度
-                currentClick.longtitude = e.latlng.lng; // 经度
+                currentClick.latitude = e.latlng.lat; 
+                currentClick.longtitude = e.latlng.lng; 
                 console.log(`Location: Longtitude ${currentClick.longtitude}, Latitude ${currentClick.latitude}`);
 
-                // 创建大圆
                 largeCircle.value = L.circle(e.latlng, {
                     color: 'blue',
                     fillColor: '#f03',
                     fillOpacity: 0.5,
-                    radius: 5 // 半径 5m
+                    radius: 5 
                 }).addTo(map.value);
 
-                // 创建小圆
                 smallCircle.value = L.circle(e.latlng, {
                     color: 'green',
                     fillColor: '#0f3',
                     fillOpacity: 0.5,
-                    radius: 200000 // 半径 200 公里
+                    radius: 200000 
                 }).addTo(map.value);
 
                 showDetails(center_cities.value[0]);
@@ -228,9 +247,37 @@ export default {
                 smallCircle.value.remove();
             }
             if (map.value) {
-                map.value.remove(); // 清理地图实例
+                map.value.remove(); 
+                map.value = null;
             }
         });
+
+        function toggleMarkers() {
+            if (!map.value) {
+                console.erroe("Map haven't init")
+                return;
+            }
+
+            const myIcon = L.icon({
+                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+            });
+
+            if (showMarkers.value) {
+            scenic_points.value.forEach(spot => {
+                const marker = L.marker([spot.coordinates[1], spot.coordinates[0]], { icon: myIcon});
+                marker.bindPopup(spot.name);
+                markers.push(marker);
+                marker.addTo(map.value);
+            });
+            } else {
+                markers.forEach(marker => marker.remove());
+                markers = [];
+            }
+
+            showMarkers.value = !showMarkers.value;
+        }
+        
 
         // return { map, basicInfo: info.basicInfo, detailedInfo: info.detailedInfo };
         return {
@@ -238,13 +285,16 @@ export default {
             selectedCity, 
             selectedCityDetails, 
             select_scenic_data,
-            get_scenic_data,
+            // get_scenic_data,
             showDetails,
             center_cities,
             get_city,
             get_response_data,
             currentClick,
-            in_circle_cities
+            in_circle_cities,
+            toggleMarkers,
+            scenic_points,
+            get_all_scenic
         };
     }
 }
@@ -257,7 +307,7 @@ export default {
     width: 20%;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto; /* 如果内容过多，可滚动查看 */
+    overflow-y: auto; 
 }
 .city-button {
     margin: 10px 0;
