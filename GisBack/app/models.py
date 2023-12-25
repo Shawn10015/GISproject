@@ -80,8 +80,6 @@ class Info(db.Model):
                     "id": scenic.id,
                     "scenic_spots_name": scenic.scenic_spots_name
                 })
-        else:
-            return None
         
         return {
             "adcode": self.adcode,
