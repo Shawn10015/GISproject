@@ -1,20 +1,16 @@
-# 建立镜像
+# build image
 
 docker-compose build
 
-postgis不需要镜像，直接建立容器就行
-
-# 建立网络
+# create network
 
 docker network create Gisnet
 
-# 建立容器
+# build container
 
 docker-compose up -d
 
--d 是放在后台
-
-# 删除容器
+# shut down and delete container
 
 docker-compose down
 
@@ -22,7 +18,10 @@ docker-compose down
 
 localhost:5000/apidocs
 
-# Port
-Gisapp 8080
-Gisback 5000
-Gisdata 80, localhost
+# Web
+
+localhost:8080
+
+# Port Gisapp 8080
+# Port Gisback 5000
+# Port Gisdata 80, localhost
