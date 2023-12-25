@@ -15,10 +15,6 @@
                 <h2>Details</h2>
                 <p v-if="selectedCity">{{ selectedCityDetails }}</p>
             </div>
-            <div class="scenic-info">
-                <h2>Scenic Spots Information</h2>
-                <p v-if="selectedCityScenics">{{ selectedCityScenics }}</p>
-            </div>
         </div>
     </div>
 </template>
@@ -120,17 +116,6 @@ export default {
             }
         }
         
-
-        // async function get_scenic_data(id) {
-        //     try {
-        //         const scenic_response = await axios.get(`http://localhost:5000/scenic/scenic/id/${id}`)
-        //         const scenicData = scenic_response.data;
-        //         select_scenic_data.value = scenicData
-        //         console.log("Scenic spots:", select_scenic_data.value)
-        //     } catch (error) {
-        //         console.error(`Error scenic id ${select_scenic_data.value.id}`)
-        //     } 
-        // }
 
         async function get_province_data(city) {
             try {
