@@ -73,11 +73,20 @@ class Info(db.Model):
     scenic_spots_data = db.relationship('Scenic_spots', backref='info', lazy=True)
 
     def to_dict(self):
-        scenic_spots_info = [scenic.scenic_spots_name for scenic in self.scenic_spots_data] if self.scenic_spots_data else None
+        scenic_spots_info = []
+        if self.scenic_spots_data:
+            for scenic in self.scenic_spots_data:
+                scenic_spots_info.append({
+                    "id": scenic.id,
+                    "scenic_spots_name": scenic.scenic_spots_name
+                })
+        else:
+            return None
+        
         return {
             "adcode": self.adcode,
             "childrenNum": self.childrenNum,
             "level": self.level,
-            "scenic_spots_name": scenic_spots_info
+            "scenic_spots_info": scenic_spots_info
         }
 

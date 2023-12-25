@@ -24,7 +24,12 @@ definitions:
         type: "integer"
       level:
         type: "string"
-      scenic_spots_name:
+      scenic_spots_info:
         type: "array"
         items:
-          type: "string"
+          type: "object"
+          properties:
+            id:
+              type: "integer"
+            scenic_spots_name:
+              type: "string"
