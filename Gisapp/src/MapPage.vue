@@ -2,9 +2,15 @@
     <div class="container">
         <div id="map"></div>
         <div class="info-panel">
+            <div class="radius">
+                <h2>Choss Radius</h2>
+                <input type="number" v-model="radius">
+                <button class="radius-button" @click="confirmRadius">Confirm</button>
+            </div>
             <div class="basic-info">
                 <h2>Basic Information</h2>
-                <button @click="toggleMarkers">Scenic Spots</button>
+                <!-- //  -->
+                <!-- <button @click="toggleMarkers">Scenic Spots</button> -->
                 <div v-if="in_circle_cities.length > 0">
                 <button v-for="city in in_circle_cities" :key="city.adcode" class="city-button" @click="showDetails(city.adcode)">
                     Name: {{ city.name }} Poupulation: {{ city.population }}
@@ -42,6 +48,8 @@ export default {
 
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
+        const radius = ref('200');
+        const choose_radius = ref(null);
 
         const showDetails = async (adcode) => {
             console.log("Selected City Adcode:", adcode);
@@ -78,7 +86,9 @@ export default {
             return degrees * (Math.PI / 180);
         }
 
-        const choose_radius = 200;
+        function confirmRadius() {
+            choose_radius.value = radius.value;
+        }
 
         function haversine(lon1, lat1, lon2, lat2) {
             //Earth Radius
@@ -157,7 +167,8 @@ export default {
 
                     in_circle_cities.value = center_cities.value.filter(city => {
                         const distance = haversine(currentClick.longtitude, currentClick.latitude, city.center_longtitude, city.center_latitude);
-                        return distance <= choose_radius;
+                        console.log(choose_radius.value);
+                        return distance <= choose_radius.value;
                     });
 
                     const add_province = in_circle_cities.value.map(city =>
@@ -216,7 +227,7 @@ export default {
                     color: 'green',
                     fillColor: '#0f3',
                     fillOpacity: 0.5,
-                    radius: 200000 
+                    radius: choose_radius.value * 1000
                 }).addTo(map.value);
 
                 showDetails(center_cities.value[0]);
@@ -279,7 +290,10 @@ export default {
             in_circle_cities,
             toggleMarkers,
             scenic_points,
-            get_all_scenic
+            get_all_scenic,
+            confirmRadius,
+            radius,
+            choose_radius
         };
     }
 }

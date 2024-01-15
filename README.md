@@ -24,4 +24,4 @@ localhost:8080
 
 # Port Gisapp 8080
 # Port Gisback 5000
-# Port Gisdata 80, localhost
+# Port Gisdata 80, localhostgi
