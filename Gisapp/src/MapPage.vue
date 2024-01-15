@@ -8,9 +8,12 @@
                 <button class="radius-button" @click="confirmRadius">Confirm</button>
             </div>
             <div class="basic-info">
+                <h4>Nearest Scenic Spot</h4>
+                <div v-if="choose_scenic">{{ choose_scenic.scenic_spots_name }}</div>
+                <h4>Distance</h4>
+                <div v-if="choose_distance">{{ choose_distance }} KM</div>
                 <h2>Basic Information</h2>
-                <!-- //  -->
-                <!-- <button @click="toggleMarkers">Scenic Spots</button> -->
+                <button @click="toggleMarkers">Scenic Spots</button>
                 <div v-if="in_circle_cities.length > 0">
                 <button v-for="city in in_circle_cities" :key="city.adcode" class="city-button" @click="showDetails(city.adcode)">
                     Name: {{ city.name }} Poupulation: {{ city.population }}
@@ -44,12 +47,15 @@ export default {
         const spot_info = ref(null);
         const scenic_points = ref([]);
         const showMarkers = ref(false);
+        const choose_scenic = ref(null);
+        const choose_distance = ref(null);
         let markers = [];
 
         const selectedCity = ref('');
         const selectedCityDetails = ref('');
         const radius = ref('200');
         const choose_radius = ref(null);
+        const scenic_group = ref([]);
 
         const showDetails = async (adcode) => {
             console.log("Selected City Adcode:", adcode);
@@ -113,6 +119,36 @@ export default {
             return city;
         }
 
+        async function get_circle_scenic(city) {
+            try {
+                const scenic_response = await axios.get(`http://localhost:5000/scenic/scenic/adcode/${city.adcode}`)
+                scenic_group.value.push(scenic_response.data);
+            } catch(error) {
+                //do nothing
+            }
+        }
+
+        async function get_scenic_data() {
+            await Promise.all(in_circle_cities.value.map(city => get_circle_scenic(city)));
+        }
+
+        function find_closet_scenic(scenic_group) {
+            let min_distance = Infinity;
+            let closet_scenic = null;
+
+            scenic_group.value.forEach(scenic_arrary => {
+                scenic_arrary.forEach(scenic => {
+                    const coordinates = scenic.geom.coordinates;
+                    const single_distance = haversine(currentClick.longtitude, currentClick.latitude, coordinates[0], coordinates[1])
+                    if (single_distance < min_distance) {
+                        min_distance = single_distance;
+                        closet_scenic = scenic;
+                    }
+                })
+            });
+            return { closet_scenic, min_distance };
+        }
+
         async function get_all_scenic() {
             try {
                 const all_scenics_response = await axios.get('http://localhost:5000/scenic/all_scenic_spots')
@@ -129,10 +165,8 @@ export default {
 
         async function get_province_data(city) {
             try {
-                const province_response = await axios.get(`http://localhost:5000/province/province/${city.adcode}`)
-                console.log(province_response);
+                const province_response = await axios.get(`http://localhost:5000/province/province/${city.adcode}`);
                 city.province = province_response.data.province;
-                console.log(city);
                 return city;
             } catch (error) {
                 console.error(`Error adcode ${city.adcode}`)
@@ -142,9 +176,7 @@ export default {
         async function get_info_details(city) {
             try {
                 const info_details_response = await axios.get(`http://localhost:5000/info/info/${city.adcode}`)
-                console.log(info_details_response);
                 city.info = info_details_response.data;
-                console.log(city);
                 return city;
             } catch (error) {
                 console.error(`Error adcode ${city.adcode}`)
@@ -167,7 +199,6 @@ export default {
 
                     in_circle_cities.value = center_cities.value.filter(city => {
                         const distance = haversine(currentClick.longtitude, currentClick.latitude, city.center_longtitude, city.center_latitude);
-                        console.log(choose_radius.value);
                         return distance <= choose_radius.value;
                     });
 
@@ -184,6 +215,11 @@ export default {
                     const add_area = in_circle_cities.value.map(city => 
                         calculate_area(city)
                     );
+
+                    in_circle_cities.value.map(city =>
+                        get_circle_scenic(city)
+                    );
+
                     in_circle_cities.value = await Promise.all(add_area);
 
                     console.log(in_circle_cities)
@@ -232,6 +268,10 @@ export default {
 
                 showDetails(center_cities.value[0]);
                 get_response_data();
+                const {closet_scenic, min_distance} = find_closet_scenic(scenic_group);
+                choose_scenic.value = closet_scenic;
+                choose_distance.value = min_distance;
+                console.log(`ABC${JSON.stringify(closet_scenic)} ${min_distance}`)
             });    
         });
 
@@ -272,6 +312,7 @@ export default {
             }
 
             showMarkers.value = !showMarkers.value;
+
         }
         
 
@@ -293,7 +334,11 @@ export default {
             get_all_scenic,
             confirmRadius,
             radius,
-            choose_radius
+            choose_radius,
+            get_scenic_data,
+            find_closet_scenic,
+            choose_scenic,
+            choose_distance
         };
     }
 }
