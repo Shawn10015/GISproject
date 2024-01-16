@@ -23,4 +23,4 @@ localhost:5000/apidocs
 # Port Gisdata 80, localhostgi
 
 ## SQL
-You should use <filename>-postgres-1 in GisBack/__init__.py, because sql link is based on docker container name.
+You should use 'foldername'-postgres-1 in GisBack/__init__.py, because sql link is based on docker container name.
