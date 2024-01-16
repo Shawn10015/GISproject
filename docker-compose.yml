@@ -1,6 +1,28 @@
-version: '3.1'
+version: '3.8'
 
 services:
+  vue-app:
+    build: ./Gisapp
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Gisapp:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run serve
+    networks:
+      - Gisnet
+
+  flask-app:
+    build: ./GisBack
+    ports:
+      - "5000:5000"
+    environment:
+      - SOME_ENV_VARIABLE=value
+    networks:
+      - Gisnet
+
   postgres:
     image: postgis/postgis
     environment:
@@ -11,7 +33,7 @@ services:
       - "5440:5432"
     volumes:
       # - postgres_data:/var/lib/postgresql/data
-      - ./export.sql:/docker-entrypoint-initdb.d/export.sql
+      - ./Gisdata/export.sql:/docker-entrypoint-initdb.d/export.sql
     networks:
       - Gisnet
 

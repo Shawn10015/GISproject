@@ -240,7 +240,6 @@ export default {
             get_all_scenic()
 
             map.value.on('click', function(e) {
-                // 移除之前的圆和标记
                 if (largeCircle.value) {
                     largeCircle.value.remove();
                 }
