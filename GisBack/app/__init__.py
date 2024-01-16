@@ -6,7 +6,7 @@ db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@youknowwho-postgres-1/gisDB'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@gisproject-postgres-1/gisDB'
     db.init_app(app)
     Swagger(app)
 
