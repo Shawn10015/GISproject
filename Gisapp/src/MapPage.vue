@@ -73,8 +73,11 @@ export default {
                 let spot_name = "Null";
                 if (detailedInfo.info && detailedInfo.info.scenic_spots_info && detailedInfo.info.scenic_spots_info.length > 0) {
                     spot_info.value = detailedInfo.info.scenic_spots_info;
+                    spot_name = spot_info.value.map(spot => spot.scenic_spots_name).join(',');
                 }
-                spot_name = spot_info.value.map(spot => spot.scenic_spots_name).join(',');
+                else {
+                    spot_name = 'Null';
+                }
                 selectedCityDetails.value = `Province: ${detailedInfo.province || 'null'}\n` +
                                             `Lower Area Num: ${(detailedInfo.info && detailedInfo.info.childrenNum) || 'null'}\n` +
                                             `Level: ${(detailedInfo.info && detailedInfo.info.level) || 'null'}\n` +
