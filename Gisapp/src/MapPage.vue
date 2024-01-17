@@ -232,10 +232,41 @@ export default {
                 }
             }
 
+        function toggleMarkers() {
+            if (!map.value) {
+                console.error("Map haven't init")
+                return;
+            }
+
+            const myIcon = L.icon({
+                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+            });
+
+            if (showMarkers.value) {
+                console.error("remove marks..")
+                markers.forEach(marker => {
+                    console.log("remove marker at:", marker.getLatLng())
+                    marker.remove()
+                });
+                markers = [];
+                showMarkers.value = false;
+            } else {
+                console.log("add markers...");
+                scenic_points.value.forEach(spot => {
+                    console.log("add marker at:", spot.coordinates);
+                    const marker = L.marker(L.latLng(spot.coordinates[1], spot.coordinates[0]), { icon: myIcon });
+                    marker.bindPopup(spot.name);
+                    markers.push(marker);
+                    marker.addTo(map.value);
+                    showMarkers.value = true;
+            })
+            }
+        }
 
         onMounted(() => {
             if (document.getElementById('map')) {
-                map.value = L.map("map").setView([33.3603, 108.5457], 5);
+                map.value = L.map("map", { zoomAnimation: false }).setView([33.3603, 108.5457], 5);
                 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                     attribution: "Map data &copy; OpenStreetMap contributors",
                 }).addTo(map.value);
@@ -284,39 +315,7 @@ export default {
             if (smallCircle.value) {
                 smallCircle.value.remove();
             }
-            if (map.value) {
-                map.value.remove(); 
-                map.value = null;
-            }
         });
-
-        function toggleMarkers() {
-            if (!map.value) {
-                console.erroe("Map haven't init")
-                return;
-            }
-
-            const myIcon = L.icon({
-                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-            });
-
-            if (showMarkers.value) {
-            scenic_points.value.forEach(spot => {
-                const marker = L.marker([spot.coordinates[1], spot.coordinates[0]], { icon: myIcon});
-                marker.bindPopup(spot.name);
-                markers.push(marker);
-                marker.addTo(map.value);
-            });
-            } else {
-                markers.forEach(marker => marker.remove());
-                markers = [];
-            }
-
-            showMarkers.value = !showMarkers.value;
-
-        }
-        
 
         // return { map, basicInfo: info.basicInfo, detailedInfo: info.detailedInfo };
         return {
