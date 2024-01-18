@@ -34,6 +34,7 @@ import "leaflet/dist/leaflet.css";
 import { ref, onMounted, onUnmounted, reactive } from 'vue';  
 import axios from 'axios';
 import * as turf from '@turf/turf';
+import arrowIcon from '@/assets/coconut-tree.png';
 
 export default {
     name: "MapPage",
@@ -232,6 +233,7 @@ export default {
                 }
             }
 
+            
         function toggleMarkers() {
             if (!map.value) {
                 console.error("Map haven't init")
@@ -239,8 +241,8 @@ export default {
             }
 
             const myIcon = L.icon({
-                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+                iconUrl: arrowIcon,
+                iconSize: [20, 20]
             });
 
             if (showMarkers.value) {
@@ -256,6 +258,7 @@ export default {
                 scenic_points.value.forEach(spot => {
                     console.log("add marker at:", spot.coordinates);
                     const marker = L.marker(L.latLng(spot.coordinates[1], spot.coordinates[0]), { icon: myIcon });
+
                     marker.bindPopup(spot.name);
                     markers.push(marker);
                     marker.addTo(map.value);
@@ -266,11 +269,15 @@ export default {
 
         onMounted(() => {
             if (document.getElementById('map')) {
-                map.value = L.map("map", { zoomAnimation: false }).setView([33.3603, 108.5457], 5);
+                map.value = L.map("map", { 
+                    zoomAnimation: false,
+                    // crs: L.CRS.EPSG3857
+                }).setView([33.3603, 108.5457], 5);
                 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                     attribution: "Map data &copy; OpenStreetMap contributors",
                 }).addTo(map.value);
             }
+
             get_all_scenic()
 
             map.value.on('click', function(e) {
@@ -306,6 +313,21 @@ export default {
                 choose_distance.value = min_distance;
                 console.log(`ABC${JSON.stringify(closet_scenic)} ${min_distance}`)
             });    
+            
+            map.value.on('zoomend moveend', function() {
+                console.log('地图缩放平移')
+            })
+
+            console.log(map.value.options.crs);
+
+            const mapContainer = document.getElementById('map');
+            const resizeObserver = new ResizeObserver(entries => {
+                for (let entry of entries) {
+                    console.log('map changed', entry.contentRect.width, entry.contentRect.height);
+                }
+            })
+            resizeObserver.observe(mapContainer);
+
         });
 
         onUnmounted(() => {
@@ -339,7 +361,7 @@ export default {
             get_scenic_data,
             find_closet_scenic,
             choose_scenic,
-            choose_distance
+            choose_distance,
         };
     }
 }
@@ -375,7 +397,7 @@ export default {
     height: 100vh;
 }
 #map {
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 .detailed-info p {
